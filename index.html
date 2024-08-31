@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyrum's Portfolio</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            background-image: url('wots.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #64ffda;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background-color: #64ffda;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        .about p, .contact p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #64ffda;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: #999;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        .about img {
+            width: 150px; /* Size of the image */
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the circular area */
+            margin: 20px 0;
+            border: 4px solid #64ffda; /* Optional border */
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: #64ffda;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hyrum's Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <center><img src="we.jpg" alt="Hyrum's Profile Image"></center>
+            <h2>About Me</h2>
+            <p>Hi, I'm Hyrum Rener V. Marcelo, a passionate web developer skilled in HTML, CSS, JavaScript, and more. I enjoy crafting modern, responsive websites and applications.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <img src="wer.jpg" alt="Project 1">
+                <h3>RES-MAP: Establishment Finder with Geo-mapping</h3>
+                <p>Res-Map is a web-based application designed to simplify the discovery of local resorts and accommodations in Echague. It offered features like information management, geo-mapping, statistical analysis, user feedback, and transportation information. The project aimed to create a central platform for Echague's tourism sector, improving the online visibility of local establishments and enhancing the travel experience. Res-Map catered to tourists, establishment owners, and the Tourism Unit of Echague, providing essential information and insights.
+                    .</p>
+            </div>
+            <div class="project-card">
+                <img src="qwe.png" alt="Project 2" class="wew" style="width: 40%;">
+                <h3>CAS Archiving System</h3>
+                <p>The College of Arts and Science (CAS) Archiving System is a web application that stores files such as personal data, CVs, ISO documents and others for each department. It allows users to upload, download, and delete files based on their account level. Account Level 1 is for the Administrator, Level 2 for the faculty, and Level 3 for program chairs (sub-admins). 
+                    .</p>
+            </div>
+            <p></p><br><br><br><br><br><br><br><br><br>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to connect, feel free to email me at <a href="mailto:hrmc2408@gmail.com">hrmc2408@gmail.com</a>.</p><br>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hyrum-rener-marcelo-01a287323/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.indeed.com/profile" target="_blank"><i class="fas fa-briefcase"></i></a>
+                <a href="https://github.com/Ayumyum" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/NotMe0724/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hyrum's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
